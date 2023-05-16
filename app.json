@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "App_Delivery2",
+    "slug": "App_Delivery2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.yourappname"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "white"
+      },
+      
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBeN3qmyH-EdZN3CVqjKF-KiWliVo4UMX4"
+        }
+      },
+      "package": "com.yourcompany.yourappname",
+      "permissions": ["android.permission.RECORD_AUDIO"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app accesses your photos to let you share them with your friends.",
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "94c5e6ad-59d1-4b5a-a290-287cbac8b76f"
+      }
+    }
+  }
+}
